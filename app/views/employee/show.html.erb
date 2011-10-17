@@ -1,0 +1,7 @@
+<div class="span12">
+				<ul class="breadcrumb">
+					<li><%= link_to 'Список компаний', :controller => "company", :action => "index" %><span class="divider">/</span></li>
+					<li><%= link_to @company_name, :controller => "company", :action => "show", :name => @company_name %><span class="divider">/</span></li>
+                    <li class="active"><%=  @employee.name %></li>
+				</ul>
+</div>
